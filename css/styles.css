@@ -1,0 +1,157 @@
+/* синий #2196F3; */
+/* черній #212121; */
+/* серій: #757575; */
+/* белій #FFFFFF;  */
+/*  серій в футере rgba(255, 255, 255, 0.6) */
+/* цвет фона темній #2F303A;
+; */
+/* цвет фона вторичній: #F5F4FA; */
+/* цвет фона футер: #2F303A; */
+:root{
+    --black-color: #212121;
+    --blue-color: #2196F3;
+    --primary-white: #FFFFFF;
+    --primary-grey: #757575;
+    --background-dark: #2F303A;
+    --background-light: #F5F4FA;
+
+}
+body {
+color: var(--primary-grey);
+font-family: Roboto,
+sans-serif;
+}
+header{
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+.logo {
+color:var(--black-color);
+text-decoration: none;
+font-family: Raleway, sans-serif;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+}
+.logo-world{
+    color:var(--blue-color);
+}
+.logo-world-two{
+    color: var(--primary-white);
+}
+ul{
+    list-style: none;
+}
+/* навигация */
+.site-nav{
+    font-weight: 500;
+}
+.site-nav .link{
+    color:var(--black-color);
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--blue-color);
+}
+.contacts:hover,
+.contacts:focus{
+    color: var(--blue-color);
+}
+.contacts{
+    color: var(--primary-grey);
+    font-weight: 500;
+}
+
+.section-title{
+    color:var(--black-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.banner{
+    background-color: var(--background-dark);
+    
+}
+.banner-title{
+    color:var(--primary-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+.features-title{
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.features-text{
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+}
+.people-title{
+    color: var(--black-color);
+    font-family: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.people-job{
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.banner-button{
+    color: var(--primary-white);
+    background-color: var(--blue-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+footer{
+   background-color: var(--background-dark);
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+}
+.section.people{
+    background-color: var(--background-light);
+}
+.footer .link{
+    color: var(--primary-grey);
+}
+.portfolio-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.portfolio-name{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--black-color);
+}
+.portfolio-description{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+.portfolio-button:focus,
+.portfolio-button:hover{
+    background-color: var(--blue-color);
+}
