@@ -8,26 +8,27 @@
 /* цвет фона вторичній: #F5F4FA; */
 /* цвет фона футер: #2F303A; */
 :root{
-    --black-color: #212121;
-    --blue-color: #2196F3;
-    --primary-white: #FFFFFF;
-    --primary-grey: #757575;
+    --dark-color: #212121;
+    --accent-color: #2196F3;
+    --primary-light: #FFFFFF;
+    --primary-middle: #757575;
     --background-dark: #2F303A;
     --background-light: #F5F4FA;
+    --transparent-light: #FFFFFF99;
 
 }
 body {
 color: var(--primary-grey);
-font-family: Roboto,
-sans-serif;
+font-family: Roboto, sans-serif;
+font-size: 14px;
 }
-header{
+.header-content{
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
 .logo {
-color:var(--black-color);
+color: var(--dark-color);
 text-decoration: none;
 font-family: Raleway, sans-serif;
 font-weight: 900;
@@ -37,37 +38,50 @@ letter-spacing: 0.03em;
 
 }
 .logo-world{
-    color:var(--blue-color);
+    color:var(--accent-color);
 }
 .logo-world-two{
-    color: var(--primary-white);
+    color: var(--primary-light);
 }
-ul{
+.site-nav,
+.contacts,
+.portfolio-list,
+.portfolio-photos,
+.footer-list,
+.features,
+.photos-list,
+.team
+{
     list-style: none;
 }
 /* навигация */
 .site-nav{
     font-weight: 500;
 }
-.site-nav .link{
-    color:var(--black-color);
+.navigation-link{
+    color:var(--dark-color);
     text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--blue-color);
+.current-button {
+    color: var(--accent-color);
 }
-.contacts:hover,
-.contacts:focus{
-    color: var(--blue-color);
+.navigation-link:hover,
+.navigation-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
 }
-.contacts{
-    color: var(--primary-grey);
+
+.contacts-link {
+    color: var(--primary-middle);
     font-weight: 500;
+    text-decoration: none;
 }
 
 .section-title{
-    color:var(--black-color);
+    color:var(--dark-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -79,48 +93,52 @@ ul{
     
 }
 .banner-title{
-    color:var(--primary-white);
+    color:var(--primary-light);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-
+    text-transform: uppercase;
 }
 .features-title{
-    color: var(--black-color);
+    color: var(--dark-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .features-text{
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
 }
-.people-title{
-    color: var(--black-color);
+.team-title{
+    color: var(--dark-color);
     font-family: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
-.people-job{
+.team-job{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
 .banner-button{
-    color: var(--primary-white);
-    background-color: var(--blue-color);
+    color: var(--primary-light);
+    background-color: var(--accent-color);
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
+    font-family: Roboto ,sans-serif;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-footer{
+.footer-content{
    background-color: var(--background-dark);
    font-size: 14px;
    line-height: 1.71;
@@ -129,8 +147,14 @@ footer{
 .section.people{
     background-color: var(--background-light);
 }
-.footer .link{
-    color: var(--primary-grey);
+.footer-link{
+    color: var(--transparent-light);
+    text-decoration:none;
+    font-style: normal;
+}
+.footer-adress{
+    font-style: normal;
+    color: var(--primary-light);
 }
 .portfolio-button{
     font-weight: 500;
@@ -139,12 +163,20 @@ footer{
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.all-button{
+    background-color: var(--accent-color);
+    color: var(--primary-light);
 }
 .portfolio-name{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--black-color);
+    color: var(--dark-color);
 }
 .portfolio-description{
     font-size: 16px;
@@ -153,5 +185,6 @@ footer{
 }
 .portfolio-button:focus,
 .portfolio-button:hover{
-    background-color: var(--blue-color);
+    background-color: var(--accent-color);
+    color:var(--primary-light);
 }
